@@ -25,6 +25,30 @@ Before running the project, ensure you have the following installed:
 - scikit-learn
 - Matplotlib
 
+## Methodology
+
+As the dataset is labeled by human raters, there are bound
+to be many mis-classed images, and some images may have
+multiple emotions. To give a better idea of the
+emotion of the person in the image, we implemented an
+emotion depth index, which gives a score for each of the
+seven classes of emotions for each image.
+
+To evaluate our model's accuracy, we extracted the
+probabilities of each emotion class for each image and
+provided a score for each of the seven emotions. First, we
+obtained the filenames of the validation data. Then, we
+passed the obtained predictions through our model. After
+which, we used NumPy to obtain the classes with the highest
+probability
+Next, we created a dataframe to store the filename,
+predicted class, true class, and probability scores for each
+class. We then calculated the score for each emotion class by
+looping through the predictions and appending the
+probability scores for each class to a list. Finally, we rounded
+the scores to two decimal places and saved them in the
+dataframe for each emotion class
+
 ## Results and Conclusion
 
 In this study, we introduced a groundbreaking
