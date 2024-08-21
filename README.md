@@ -26,6 +26,7 @@ Before running the project, ensure you have the following installed:
 - Matplotlib
 
 ## Methodology
+![image](https://github.com/user-attachments/assets/8cdaeb92-3aa4-4d06-8ad9-cfb7f6a7aba0)
 
 As the dataset is labeled by human raters, there are bound
 to be many mis-classed images, and some images may have
